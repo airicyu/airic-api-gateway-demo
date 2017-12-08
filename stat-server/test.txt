@@ -1,0 +1,55 @@
+###
+POST http://localhost:3005/statQuery/app/b84cdbefe8ab42d38df0aa415030c4a1
+Content-type: application/json
+id-key: {{appIdKey}}
+
+{
+    "bucketStart": 1508560920,
+    "bucketEnd": 1600000000,
+    "groupBy": "clientId"
+}
+
+###
+POST http://localhost:3005/statQuery/app/b84cdbefe8ab42d38df0aa415030c4a1
+Content-type: application/json
+id-key: {{workspaceIdKey}}
+
+{
+    "bucketStart": 1508560920,
+    "bucketEnd": 1600000000,
+    "groupBy": "opId"
+}
+
+###
+POST http://localhost:3005/statQuery/app/b84cdbefe8ab42d38df0aa415030c4a1
+Content-type: application/json
+id-key: {{workspaceIdKey}}
+
+{
+    "clientId": "4364938982b54da1807c599a955cdfcc",
+    "bucketStart": 1508560920,
+    "bucketEnd": 1600000000,
+    "groupBy": "clientId"
+}
+
+###
+POST http://localhost:3005/statQuery/app/b84cdbefe8ab42d38df0aa415030c4a1
+Content-type: application/json
+id-key: {{workspaceIdKey}}
+
+{
+    "clientId": "{{clientId}}",
+    "bucketStart": 1508560920,
+    "bucketEnd": 1600000000,
+    "groupBy": "opId"
+}
+
+###
+POST http://localhost:3005/statQuery/client/4364938982b54da1807c599a955cdfcc
+Content-type: application/json
+id-key: {{workspaceIdKey}}
+
+{
+    "bucketStart": 1508560920,
+    "bucketEnd": 1600000000
+}

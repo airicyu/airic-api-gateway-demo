@@ -1,0 +1,95 @@
+########### The variables being used by below sample requests #############
+{
+    "workspaceId": "6ba955dde3044b6687af7b4d05a64920",
+    "workspaceSecret": "c376f991c6744cfea1ccdad23356ab10",
+    "appId": "b84cdbefe8ab42d38df0aa415030c4a1",
+    "appSecret": "fd39eb34e94d41008cc0e196fdc5fc17",
+    "clientId": "4364938982b54da1807c599a955cdfcc",
+    "clientSecret": "4af18e30-85b6-4c14-aecd-c489d404a179",
+    "adminToken": "d8745e9d03be41ad817a47176ade4dcc",
+    "apiKey": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImZpbmdlcnByaW50IjoiZmI6OWM6Yzc6NzQ6NjQ6Y2I6YzM6Mzk6ZWM6MTg6ZmQ6Njk6OTk6ZTk6YWY6MjYifQ.eyJ0b2tlbi10eXBlIjoiYXBpS2V5IiwiY2xpZW50SWQiOiI0MzY0OTM4OTgyYjU0ZGExODA3YzU5OWE5NTVjZGZjYyIsImFwcElkIjoiYjg0Y2RiZWZlOGFiNDJkMzhkZjBhYTQxNTAzMGM0YTEiLCJ3b3Jrc3BhY2VJZCI6IjZiYTk1NWRkZTMwNDRiNjY4N2FmN2I0ZDA1YTY0OTIwIiwidmVyIjoiMSIsInN0YXRlIjpudWxsLCJpYXQiOjE1MTI3NDI3ODF9.IRgzdh49qOs62Fe_dTUmiS7xm9h3utfDUqjdIS0pMoxhoW3eV4E5DfxQ9H5Ljfp2sT_-xdYAIheWWmLC3s0wSkOdJoGhHKoupr-4eg5dTcdd5GqJTxsbbB-1PD19ojuYdDdNvUINhzmiFHgGgf4i_ssJVvwNlAxyEnz41pvSwTgif17gK691lKQh4J39xSxvo_a6ApB8g0EBs_3NPU3ptXNQ7wIiXtTY5FFSlGyD8AFWTxLV8IE1zRK77NQuzGxOlV2U7wC_qdjd6g5UkOXcuH1Br2HMzVg5GFZQzhGAMARRJwYgdXHahHq4kl0T1DQRl-0mBqjl6bQaSPAyG8oduw",
+    "workspaceIdKey": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImZpbmdlcnByaW50IjoiZmI6OWM6Yzc6NzQ6NjQ6Y2I6YzM6Mzk6ZWM6MTg6ZmQ6Njk6OTk6ZTk6YWY6MjYifQ.eyJ0b2tlbi10eXBlIjoiaWRlbnRpdHkiLCJzdWItdHlwZSI6IndvcmtzcGFjZSIsInN1YiI6IjZiYTk1NWRkZTMwNDRiNjY4N2FmN2I0ZDA1YTY0OTIwIiwidmVyIjoiMSIsInN0YXRlIjpudWxsLCJpYXQiOjE1MTAyNDM4NTV9.c0uR3XpF6f69PK9avsN6FXKTcDx09T93wxJGfKwROte5S22v0LQEv_xGoFJnsyq542cjClKFNPVmq-LXopinIby7R3qNTexbBymSuguD1BZmzdpP6E4Kx7O_T0YZhbbihA5TLB395wkrQ-x-KnKs8nN2mMWzYPGo5S9d5_GoI7qOHS73wL7p8jogQb78oVFLDOkH8BghZn2RG2caoSO_HB1EX4QFoHwiPIZUJFc4Yui7dTluEA4xQ3pRAZUQWNHB1Q-Ome5PIvlWjLHT-nL7-FVUPTiCIdgKDwORLfPvRuK2dqzmdpAzU-5XBn6T3QxMDHY60uEiN1jnH03WI8rvbA",
+    "appIdKey": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImZpbmdlcnByaW50IjoiZmI6OWM6Yzc6NzQ6NjQ6Y2I6YzM6Mzk6ZWM6MTg6ZmQ6Njk6OTk6ZTk6YWY6MjYifQ.eyJ0b2tlbi10eXBlIjoiaWRlbnRpdHkiLCJzdWItdHlwZSI6ImFwcCIsInN1YiI6ImI4NGNkYmVmZThhYjQyZDM4ZGYwYWE0MTUwMzBjNGExIiwidmVyIjoiMSIsInN0YXRlIjpudWxsLCJpYXQiOjE1MTI3MzU1ODB9.WOEvJGhgn0y47FKE9GlDQfsW_0qzk3g6dYRZTOk-MioRhw8u8T5ZqaA1kce6Ef0ODRXoTc3Cr6kEjtBz_BzB6_6KlUsUBqPYWNDQLHo_ZOh4mOivR0XbsnTUdPOt9KbeCRcjySTZkowDskM3CahyhZx2k6utHzg1-hoS5w8zfRaaCyufkVCLM_tnpTfmW18Dw_gMGxc29pAZNRiS0e_mUF67s2KCqOEylI3gLPLKmOcCLzT6i_UQuRfY5SzdAe0MDR8QzFooxG57SXzQX9FU3cXdXRhz6w0exGK5Z-OFmOIX_7dY8Qn9GAShIBxuyE_Pd39PaiOeL2UVp7U10EoBJQ"
+}
+##########################################################
+
+
+
+########### Original sample app endpoint without API gateway #############
+POST http://localhost:8080/v2/store/order
+
+dummy=123&a=b
+
+##########################################################
+
+
+
+
+
+########### Call sample app endpoint via API gateway #############
+POST http://localhost:3000/v2/store/order
+api-key: {{apiKey}}
+
+dummy=123&a=b
+
+##########################################################
+
+
+
+
+
+
+########### Query App API usage stat, grouped per client #############
+POST http://localhost:3005/statQuery/app/b84cdbefe8ab42d38df0aa415030c4a1
+Content-type: application/json
+id-key: {{appIdKey}}
+
+{
+    "bucketStart": 1508560920,
+    "bucketEnd": 1600000000,
+    "groupBy": "clientId"
+}
+
+##########################################################
+
+
+########### Query App API usage stat, grouped per operation #############
+POST http://localhost:3005/statQuery/app/b84cdbefe8ab42d38df0aa415030c4a1
+Content-type: application/json
+id-key: {{workspaceIdKey}}
+
+{
+    "bucketStart": 1508560920,
+    "bucketEnd": 1600000000,
+    "groupBy": "opId"
+}
+
+##########################################################
+
+
+########### Query App API usage stat from a specific client #############
+POST http://localhost:3005/statQuery/app/b84cdbefe8ab42d38df0aa415030c4a1
+Content-type: application/json
+id-key: {{workspaceIdKey}}
+
+{
+    "clientId": "4364938982b54da1807c599a955cdfcc",
+    "bucketStart": 1508560920,
+    "bucketEnd": 1600000000,
+    "groupBy": "clientId"
+}
+
+##########################################################
+
+
+########### Query Apps' API call stat from a specific client's perspective, grouped per app #############
+POST http://localhost:3005/statQuery/client/4364938982b54da1807c599a955cdfcc
+Content-type: application/json
+id-key: {{workspaceIdKey}}
+
+{
+    "bucketStart": 1508560920,
+    "bucketEnd": 1600000000
+}
+
+##########################################################

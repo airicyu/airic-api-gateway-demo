@@ -1,0 +1,56 @@
+POST http://localhost:3002/keys/id-key
+Content-type: application/json
+id-key: {{adminToken}}
+
+{
+    "subjectType": "workspace",
+    "workspaceId": "{{workspaceId}}",
+    "secret": "{{workspaceSecret}}"
+}
+
+###
+POST http://localhost:3002/keys/id-key
+Content-type: application/json
+id-key: {{adminToken}}
+
+{
+    "subjectType": "app",
+    "appId": "{{appId}}",
+    "secret": "{{appSecret}}"
+}
+
+###
+POST http://localhost:3002/keys/id-key/verification
+Content-type: application/json
+
+{
+    "key": "{{workspaceIdKey}}"
+}
+
+###
+POST http://localhost:3002/keys/id-key/verification
+Content-type: application/json
+
+{
+    "key": "{{appIdKey}}"
+}
+
+###
+###
+POST http://localhost:3002/keys/api-key
+Content-type: application/json
+id-key: {{adminToken}}
+
+{
+    "appId": "{{appId}}",
+    "secret": "{{appSecret}}"
+    "clientId": "{{clientId}}"
+}
+
+###
+POST http://localhost:3002/keys/api-key/verification
+Content-type: application/json
+
+{
+    "key": "{{apiKey}}"
+}

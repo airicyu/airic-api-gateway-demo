@@ -1,0 +1,14 @@
+POST http://localhost:8080/v2/store/order?q=t
+
+dummy=123&a=b
+
+###
+GET http://localhost:3000/v2/store/inventory
+api-key: {{apiKey}}
+
+
+###
+POST http://localhost:3000/v2/store/order?q=t
+api-key: {{apiKey}}
+
+dummy=123&a=b
