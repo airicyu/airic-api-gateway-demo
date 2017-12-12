@@ -821,59 +821,41 @@ externalDocs:
 
 
 
-
-POST http://localhost:3001/keys/id-key
+###
+POST http://localhost:3001/workspaces/{{workspaceId}}/id-keys
 Content-type: application/json
 id-key: {{adminToken}}
 
-{
-    "subjectType": "workspace",
-    "workspaceId": "{{workspaceId}}"
-}
-
-
-POST http://localhost:3001/keys/id-key
+###
+POST http://localhost:3001/workspaces/{{workspaceId}}/id-keys
 Content-type: application/json
 
 {
-    "subjectType": "workspace",
     "workspaceId": "{{workspaceId}}",
     "secret": "{{workspaceSecret}}"
 }
 
 ###
-POST http://localhost:3001/keys/id-key
+POST http://localhost:3001/workspaces/{{workspaceId}}/apps/{{appId}}/id-keys
 Content-type: application/json
 id-key: {{adminToken}}
 
-{
-    "subjectType": "app",
-    "appId": "{{appId}}"
-}
-
 ###
-POST http://localhost:3001/keys/id-key
+POST http://localhost:3001/workspaces/{{workspaceId}}/apps/{{appId}}/id-keys
 Content-type: application/json
 id-key: {{workspaceIdKey}}
 
-{
-    "subjectType": "app",
-    "appId": "{{appId}}",
-    "secret": "{{appSecret}}"
-}
-
 ###
-POST http://localhost:3001/keys/id-key
+POST http://localhost:3001/workspaces/{{workspaceId}}/apps/{{appId}}/id-keys
 Content-type: application/json
 
 {
-    "subjectType": "app",
     "appId": "{{appId}}",
     "secret": "{{appSecret}}"
 }
 
 ###
-DELETE http://localhost:3001/keys/id-key/revoke
+DELETE http://localhost:3001/keys/id-keys/revoke
 Content-type: application/json
 id-key: {{adminToken}}
 
@@ -882,7 +864,7 @@ id-key: {{adminToken}}
 }
 
 ###
-DELETE http://localhost:3001/keys/id-key/revoke
+DELETE http://localhost:3001/keys/id-keys/revoke
 Content-type: application/json
 id-key: {{workspaceIdKey}}
 
@@ -891,7 +873,7 @@ id-key: {{workspaceIdKey}}
 }
 
 ###
-DELETE http://localhost:3001/keys/id-key/revoke
+DELETE http://localhost:3001/keys/id-keys/revoke
 Content-type: application/json
 id-key: {{adminToken}}
 
@@ -900,7 +882,7 @@ id-key: {{adminToken}}
 }
 
 ###
-DELETE http://localhost:3001/keys/id-key/revoke
+DELETE http://localhost:3001/keys/id-keys/revoke
 Content-type: application/json
 id-key: {{workspaceIdKey}}
 
@@ -909,7 +891,7 @@ id-key: {{workspaceIdKey}}
 }
 
 ###
-DELETE http://localhost:3001/keys/id-key/revoke
+DELETE http://localhost:3001/keys/id-keys/revoke
 Content-type: application/json
 id-key: {{appIdKey}}
 
@@ -918,7 +900,7 @@ id-key: {{appIdKey}}
 }
 
 ###
-POST http://localhost:3001/keys/id-key/verification
+POST http://localhost:3001/keys/id-keys/verification
 Content-type: application/json
 
 {
@@ -926,7 +908,7 @@ Content-type: application/json
 }
 
 ###
-POST http://localhost:3001/keys/id-key/verification
+POST http://localhost:3001/keys/id-keys/verification
 Content-type: application/json
 
 {
@@ -934,40 +916,34 @@ Content-type: application/json
 }
 
 ###
-POST http://localhost:3001/keys/api-key
+POST http://localhost:3001/workspaces/{{workspaceId}}/apps/{{appId}}/api-keys
 Content-type: application/json
 id-key: {{adminToken}}
 
 {
-    "appId": "{{appId}}",
-    "secret": "{{appSecret}}"
     "clientId": "{{clientId}}"
 }
 
 ###
-POST http://localhost:3001/keys/api-key
+POST http://localhost:3001/workspaces/{{workspaceId}}/apps/{{appId}}/api-keys
 Content-type: application/json
 id-key: {{workspaceIdKey}}
 
 {
-    "appId": "{{appId}}",
-    "secret": "{{appSecret}}"
     "clientId": "{{clientId}}"
 }
 
 ###
-POST http://localhost:3001/keys/api-key
+POST http://localhost:3001/workspaces/{{workspaceId}}/apps/{{appId}}/api-keys
 Content-type: application/json
 id-key: {{appIdKey}}
 
 {
-    "appId": "{{appId}}",
-    "secret": "{{appSecret}}"
     "clientId": "{{clientId}}"
 }
 
 ###
-POST http://localhost:3001/keys/api-key/verification
+POST http://localhost:3001/keys/api-keys/verification
 Content-type: application/json
 
 {

@@ -1,26 +1,83 @@
-POST http://localhost:3002/keys/id-key
+###
+POST http://localhost:3002/workspaces/{{workspaceId}}/id-keys
 Content-type: application/json
 id-key: {{adminToken}}
 
+###
+POST http://localhost:3002/workspaces/{{workspaceId}}/id-keys
+Content-type: application/json
+
 {
-    "subjectType": "workspace",
     "workspaceId": "{{workspaceId}}",
     "secret": "{{workspaceSecret}}"
 }
 
 ###
-POST http://localhost:3002/keys/id-key
+POST http://localhost:3002/workspaces/{{workspaceId}}/apps/{{appId}}/id-keys
 Content-type: application/json
 id-key: {{adminToken}}
 
+###
+POST http://localhost:3002/workspaces/{{workspaceId}}/apps/{{appId}}/id-keys
+Content-type: application/json
+id-key: {{workspaceIdKey}}
+
+###
+POST http://localhost:3002/workspaces/{{workspaceId}}/apps/{{appId}}/id-keys
+Content-type: application/json
+
 {
-    "subjectType": "app",
     "appId": "{{appId}}",
     "secret": "{{appSecret}}"
 }
 
 ###
-POST http://localhost:3002/keys/id-key/verification
+DELETE http://localhost:3002/keys/id-keys/revoke
+Content-type: application/json
+id-key: {{adminToken}}
+
+{
+    "key": "{{workspaceIdKey}}"
+}
+
+###
+DELETE http://localhost:3002/keys/id-keys/revoke
+Content-type: application/json
+id-key: {{workspaceIdKey}}
+
+{
+    "key": "{{workspaceIdKey}}"
+}
+
+###
+DELETE http://localhost:3002/keys/id-keys/revoke
+Content-type: application/json
+id-key: {{adminToken}}
+
+{
+    "key": "{{appIdKey}}"
+}
+
+###
+DELETE http://localhost:3002/keys/id-keys/revoke
+Content-type: application/json
+id-key: {{workspaceIdKey}}
+
+{
+    "key": "{{appIdKey}}"
+}
+
+###
+DELETE http://localhost:3002/keys/id-keys/revoke
+Content-type: application/json
+id-key: {{appIdKey}}
+
+{
+    "key": "{{appIdKey}}"
+}
+
+###
+POST http://localhost:3002/keys/id-keys/verification
 Content-type: application/json
 
 {
@@ -28,7 +85,7 @@ Content-type: application/json
 }
 
 ###
-POST http://localhost:3002/keys/id-key/verification
+POST http://localhost:3002/keys/id-keys/verification
 Content-type: application/json
 
 {
@@ -36,19 +93,34 @@ Content-type: application/json
 }
 
 ###
-###
-POST http://localhost:3002/keys/api-key
+POST http://localhost:3002/workspaces/{{workspaceId}}/apps/{{appId}}/api-keys
 Content-type: application/json
 id-key: {{adminToken}}
 
 {
-    "appId": "{{appId}}",
-    "secret": "{{appSecret}}"
     "clientId": "{{clientId}}"
 }
 
 ###
-POST http://localhost:3002/keys/api-key/verification
+POST http://localhost:3002/workspaces/{{workspaceId}}/apps/{{appId}}/api-keys
+Content-type: application/json
+id-key: {{workspaceIdKey}}
+
+{
+    "clientId": "{{clientId}}"
+}
+
+###
+POST http://localhost:3002/workspaces/{{workspaceId}}/apps/{{appId}}/api-keys
+Content-type: application/json
+id-key: {{appIdKey}}
+
+{
+    "clientId": "{{clientId}}"
+}
+
+###
+POST http://localhost:3002/keys/api-keys/verification
 Content-type: application/json
 
 {
