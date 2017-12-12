@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/airicyu/airic-api-gateway"
   },
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha",
@@ -20,27 +21,6 @@
   "devDependencies": {},
   "engines": {
     "node": "7 || 8"
-  },
-  "nyc": {
-    "check-coverage": true,
-    "per-file": true,
-    "lines": 70,
-    "statements": 70,
-    "functions": 70,
-    "branches": 70,
-    "include": [
-      "src/**.js"
-    ],
-    "exclude": [],
-    "reporter": [
-      "lcov",
-      "text-summary"
-    ],
-    "require": [],
-    "extension": [],
-    "cache": true,
-    "all": true,
-    "report-dir": "./coverage"
   },
   "license": "ISC"
 }
